@@ -3,8 +3,9 @@ Reptile Keeper records application
 
 ## Install
 
-    npm -g install webpack-dev-server
+    npm -g install webpack-dev-server typings
     npm install
+    typings install
 
 ## Dev
 
