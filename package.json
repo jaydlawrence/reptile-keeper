@@ -1,0 +1,31 @@
+{
+  "name": "snakething",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "2.2.4",
+    "brfs": "1.4.3",
+    "css-loader": "0.25.0",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "source-map-loader": "0.1.5",
+    "style-loader": "0.13.1",
+    "transform-loader": "0.2.3",
+    "typescript": "2.0.3",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "webpack-livereload-plugin": "0.8.2"
+  },
+  "dependencies": {
+    "material-ui": "0.15.4",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-tap-event-plugin": "1.0.0"
+  }
+}
