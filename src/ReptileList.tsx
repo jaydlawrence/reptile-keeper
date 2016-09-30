@@ -6,14 +6,15 @@ import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
 const styles = {
   root: {
-    display: 'flex',
-    flexWrap: 'wrap'
+    // display: 'flex',
+    // flexWrap: 'wrap'
   },
   gridList: {
-    width: 500,
-    height: 500,
-    overflowY: 'auto',
-    marginBottom: 24
+    // width: 500,
+    // height: 500,
+    // 
+    //overflowY: 'auto',
+    // marginBottom: 24
   },
 };
 
@@ -83,6 +84,7 @@ class ReptileList extends React.Component<ReptileListProps, ReptileListState> {
       <div style={styles.root}>
         <GridList
         cellHeight={200}
+        cols={3}
         style={styles.gridList}
         >
         <Subheader>{this.props.name}</Subheader>

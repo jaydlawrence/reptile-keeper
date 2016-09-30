@@ -9,7 +9,7 @@ import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import Dialog from 'material-ui/Dialog';
 
-import ReptileList from './ReptileList';
+import EntityTabs from './EntityTabs';
 
 const injectTapEventPlugin = require('react-tap-event-plugin');
 
@@ -73,12 +73,7 @@ class App extends React.Component<AppProps, AppState> {
             title="Title"
             iconClassNameRight="muidocs-icon-navigation-expand-more"/>
 
-          <FlatButton label="Primary" primary={true} onTouchTap={this.handleOpen} />
-
-          <TextField
-            hintText="Hint Text" />
-
-          <ReptileList name={"Reptiles"}></ReptileList>
+            <EntityTabs></EntityTabs>
 
           <Dialog
             title="Dialog With Actions"
