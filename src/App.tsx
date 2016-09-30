@@ -1,5 +1,5 @@
 import React = require('react');
-import ReactDOM = require('react-dom')
+import ReactDOM = require('react-dom');
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { lightBaseTheme } from 'material-ui/styles';
@@ -9,6 +9,8 @@ import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import Dialog from 'material-ui/Dialog';
 
+import ReptileList from './ReptileList';
+
 const injectTapEventPlugin = require('react-tap-event-plugin');
 
 injectTapEventPlugin();
@@ -17,11 +19,11 @@ interface AppProps {
 
 }
 
-interface StateProps {
+interface AppState {
   open: boolean;
 }
 
-class App extends React.Component<AppProps, StateProps> {
+class App extends React.Component<AppProps, AppState> {
   static childContextTypes = {
     muiTheme: React.PropTypes.object
   };
@@ -75,6 +77,8 @@ class App extends React.Component<AppProps, StateProps> {
 
           <TextField
             hintText="Hint Text" />
+
+          <ReptileList name={"Reptiles"}></ReptileList>
 
           <Dialog
             title="Dialog With Actions"
