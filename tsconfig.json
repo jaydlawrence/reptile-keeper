@@ -11,7 +11,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "jsx": "react",
     "inlineSourceMap": true,
-    "inlineSources": true
+    "inlineSources": true,
+    "sourceMap": false
   },
   "filesGlob": [
     "./**/*.ts",
